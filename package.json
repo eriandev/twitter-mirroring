@@ -1,0 +1,29 @@
+{
+  "name": "twitter-mirroring",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "prepare": "svelte-kit sync",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "pretest": "svelte-check --tsconfig ./jsconfig.json",
+    "prelint": "prettier --write src/**/*.{svelte,js,css}",
+    "lint": "eslint --fix src/**/*.{svelte,js}",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.22.2",
+    "@sveltejs/adapter-static": "1.0.0-next.34",
+    "@sveltejs/kit": "1.0.0-next.350",
+    "eslint": "8.17.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-svelte3": "4.0.0",
+    "prettier": "2.7.0",
+    "prettier-plugin-svelte": "2.7.0",
+    "svelte": "3.48.0",
+    "svelte-check": "2.7.2"
+  }
+}
