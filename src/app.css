@@ -1,0 +1,51 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import './styles';
+
+@layer base {
+  :root {
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-black font-twitter text-gray-100;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  svg,
+  input {
+    @apply outline-none;
+  }
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'TwitterChirp';
+  src: local(''), url('./assets/fonts/chirp-regular-web.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'TwitterChirp';
+  src: local(''), url('./assets/fonts/chirp-medium-web.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'TwitterChirp';
+  src: local(''), url('./assets/fonts/chirp-bold-web.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'TwitterChirp';
+  src: local(''), url('./assets/fonts/chirp-heavy-web.woff') format('woff');
+}

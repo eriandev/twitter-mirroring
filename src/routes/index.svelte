@@ -1,1 +1,1 @@
-<h1>Welcome to Twitter Mirroring</h1>
+<h1 class="title">Welcome to Twitter <span>Mirroring</span></h1>
