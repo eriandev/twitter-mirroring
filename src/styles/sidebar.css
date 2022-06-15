@@ -1,0 +1,31 @@
+@layer components {
+  .sidebar {
+    @apply fixed bottom-0 grid h-[50px] w-full content-center border-t border-solid border-gray-300;
+    @apply sm:static sm:h-full sm:max-h-screen sm:content-start sm:justify-items-center;
+    @apply lg:pr-2;
+
+    .logo {
+      @apply hidden;
+      @apply md:my-1 md:grid md:h-[46.5px] md:w-[46.5px] md:place-items-center md:rounded-full;
+      @apply xl:mr-auto xl:px-[1.125rem];
+    }
+
+    ul {
+      @apply grid cursor-pointer grid-cols-5 justify-items-center;
+      @apply sm:w-[46.5px] sm:grid-cols-1 sm:grid-rows-8 sm:justify-items-stretch sm:gap-2;
+      @apply xl:w-full;
+
+      li {
+        @apply grid rounded-full transition-[background-color] duration-200 ease-in-out;
+        @apply hover:transition-[background-color] hover:duration-200 hover:ease-in-out;
+        @apply active:transition-[background-color] active:duration-200 active:ease-in-out;
+        @apply sm:h-[46.5px] sm:w-full sm:items-center sm:justify-center;
+        @apply xl:w-max xl:grid-cols-[min-content_auto] xl:justify-start xl:gap-4 xl:px-[1.125rem];
+
+        &.on-md {
+          @apply hidden md:grid;
+        }
+      }
+    }
+  }
+}

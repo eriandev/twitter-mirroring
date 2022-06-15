@@ -48,6 +48,9 @@ module.exports = {
         'xl-layout': 'minmax(auto, 264px) auto',
         'lg-main': 'minmax(auto, 600px) minmax(auto, 290px)',
         'xl-main': 'minmax(auto, 600px) minmax(auto, 350px)',
+      },
+      gridTemplateRows: {
+        8: 'repeat(8, minmax(0, 1fr))',
       }
     }
   },

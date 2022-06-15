@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Inicio",
+    "name": "home",
+    "to": "/home"
+  },
+  {
+    "text": "Explorar",
+    "name": "hashtag",
+    "to": "/"
+  },
+  {
+    "text": "Comunidad",
+    "name": "persons",
+    "to": "/"
+  },
+  {
+    "text": "Notificaciones",
+    "name": "bell",
+    "to": "/"
+  },
+  {
+    "text": "Mensajes",
+    "name": "mail",
+    "to": "/"
+  },
+  {
+    "text": "Guardados",
+    "name": "bookmark",
+    "to": "/"
+  },
+  {
+    "text": "Perfil",
+    "name": "person",
+    "to": "/"
+  },
+  {
+    "text": "Más opciones",
+    "name": "circle-options",
+    "to": "/"
+  }
+]
