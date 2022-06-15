@@ -1,0 +1,5 @@
+@layer components {
+  .title {
+    @apply text-xl font-bold;
+  }
+}
