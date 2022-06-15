@@ -40,5 +40,15 @@ module.exports = {
       white: 'rgb(255, 255, 255)',
       transparent: 'transparent',
     },
+
+    extend: {
+      gridTemplateColumns: {
+        'sm-layout': 'minmax(auto, 68px) auto',
+        'md-layout': 'minmax(auto, 114px) minmax(auto, 600px)',
+        'xl-layout': 'minmax(auto, 264px) auto',
+        'lg-main': 'minmax(auto, 600px) minmax(auto, 290px)',
+        'xl-main': 'minmax(auto, 600px) minmax(auto, 350px)',
+      }
+    }
   },
 }
