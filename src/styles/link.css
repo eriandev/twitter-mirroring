@@ -1,0 +1,15 @@
+@layer components {
+  .link {
+    &.primary {
+      @apply text-primary-100;
+    }
+
+    &.decorated {
+      @apply hover:underline;
+    }
+
+    &.tiny {
+      @apply text-xs font-bold;
+    }
+  }
+}
