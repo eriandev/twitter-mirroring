@@ -1,0 +1,21 @@
+@layer components {
+  .text {
+    word-break: break-word;
+
+    &.opaque {
+      @apply text-gray-200;
+    }
+
+    &.tiny {
+      @apply text-[0.5rem];
+    }
+
+    &.small {
+      @apply text-xs;
+    }
+
+    &.large {
+      @apply text-lg xl:text-xl;
+    }
+  }
+}
