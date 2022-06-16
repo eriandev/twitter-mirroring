@@ -1,5 +1,9 @@
 <script>
-  import Title from '@/components/atoms/Title.svelte'
+  import TweetCard from '@/components/molecules/TweetCard.svelte'
+
+  const message =
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolorum! Dolorum suscipit eos iusto excepturi ipsam, amet odit ut velit. Reiciendis, numquam nisi! Omnis inventore repellat hic ut minus quisquam?'
 </script>
 
-<Title tag="h1">Welcome to Twitter Mirroring</Title>
+<TweetCard owner={{ name: 'Erick Vargas', user: 'eriandev' }} timestamp={1655391763172} {message} />
+<TweetCard owner={{ name: 'Erick Vargas', user: 'eriandev' }} timestamp={1655391763172} message="Un nuevo tweet" />

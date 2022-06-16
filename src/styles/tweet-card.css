@@ -1,0 +1,39 @@
+@layer components {
+  .tweet {
+    @apply grid cursor-pointer grid-cols-[48px_auto] gap-3 border-b border-solid border-gray-300 px-4 py-3 transition-[background-color] duration-200 ease-in-out;
+    @apply hover:bg-white hover:bg-opacity-[0.03] hover:transition-[background-color] hover:duration-200 hover:ease-in-out;
+
+    img {
+      @apply h-12 w-12 rounded-full;
+    }
+
+    header {
+      @apply text-[15px];
+    }
+
+    footer {
+      @apply mt-3 grid max-w-[425px] grid-cols-[repeat(4,fit-content(100%))] justify-between;
+
+      div {
+        @apply grid grid-cols-2 items-center gap-2 text-gray-200 transition-[background-color] duration-200 ease-in-out;
+        @apply hover:transition-[background-color] hover:duration-200 hover:ease-in-out;
+
+        &.comments {
+          @apply hover:text-primary-100;
+        }
+
+        &.retweets {
+          @apply hover:text-retweet-100;
+        }
+
+        &.likes {
+          @apply hover:text-liked-100;
+        }
+
+        &.share {
+          @apply hover:text-primary-100;
+        }
+      }
+    }
+  }
+}
