@@ -1,0 +1,122 @@
+[
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0
+    },
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolorum! Dolorum suscipit eos iusto excepturi ipsam, amet odit ut velit. Reiciendis, numquam nisi! Omnis inventore repellat hic ut minus quisquam?",
+    "with_media": false,
+    "media": {
+      "type": "img",
+      "src": ""
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0
+    },
+    "message": "Un nuevo tweet!",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": ["https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png"]
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0
+    },
+    "message": "Un nuevo tweet!",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": [
+        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
+        "https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg"
+      ]
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0
+    },
+    "message": "Un nuevo tweet!",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": [
+        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
+        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
+        "https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg"
+      ]
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0
+    },
+    "message": "Un nuevo tweet!",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": [
+        "https://pbs.twimg.com/media/FSrp2zIWAAEuYDn?format=jpg&name=small",
+        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
+        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
+        "https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg"
+      ]
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0
+    },
+    "message": "Un nuevo tweet!",
+    "with_media": true,
+    "media": {
+      "type": "gif",
+      "src": "https://media.giphy.com/media/3o85xwSzDvuE1b2tW0/giphy.gif"
+    },
+    "created_at": 1655391763172
+  }
+]
