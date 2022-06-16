@@ -3,15 +3,21 @@
     @apply grid cursor-pointer grid-cols-[48px_auto] gap-3 border-b border-solid border-gray-300 px-4 py-3 transition-[background-color] duration-200 ease-in-out;
     @apply hover:bg-white hover:bg-opacity-[0.03] hover:transition-[background-color] hover:duration-200 hover:ease-in-out;
 
-    header {
+    &-header {
       @apply text-[15px];
     }
 
-    .media {
-      @apply mt-3;
+    &-message {
+      @apply mb-3 text-[15px] leading-5;
     }
 
-    footer {
+    &-media {
+      .single {
+        @apply max-h-[510px] max-w-[504px] rounded-[18px] border border-solid border-gray-300;
+      }
+    }
+
+    &-footer {
       @apply mt-3 grid max-w-[425px] grid-cols-[repeat(4,fit-content(100%))] justify-between;
 
       div {

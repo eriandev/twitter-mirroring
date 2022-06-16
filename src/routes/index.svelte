@@ -1,14 +1,44 @@
 <script>
-  import TweetCard from '@/components/molecules/TweetCard.svelte'
+  import Tweet from '@/components/molecules/Tweet.svelte'
+  import TweetMedia from '@/components/molecules/TweetMedia.svelte'
 
   const message =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolorum! Dolorum suscipit eos iusto excepturi ipsam, amet odit ut velit. Reiciendis, numquam nisi! Omnis inventore repellat hic ut minus quisquam?'
 </script>
 
-<TweetCard owner={{ name: 'Erick Vargas', user: 'eriandev' }} timestamp={1655391763172} {message} />
-<TweetCard
+<Tweet
   owner={{ name: 'Erick Vargas', user: 'eriandev' }}
-  timestamp={1655391763172}
-  message="Un nuevo tweet"
-  media={{ image: 'https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png' }}
+  createdAt={1655391763172}
+  {message}
+  reactions={{
+    comments: 0,
+    retweets: 0,
+    likes: 0,
+  }}
 />
+
+<Tweet
+  owner={{ name: 'Erick Vargas', user: 'eriandev' }}
+  createdAt={1655391763172}
+  message="Un nuevo tweet"
+  reactions={{
+    comments: 0,
+    retweets: 0,
+    likes: 0,
+  }}
+>
+  <TweetMedia type="img" src="https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png" />
+</Tweet>
+
+<Tweet
+  owner={{ name: 'Erick Vargas', user: 'eriandev' }}
+  createdAt={1655391763172}
+  message="Amazing tweet!"
+  reactions={{
+    comments: 0,
+    retweets: 0,
+    likes: 0,
+  }}
+>
+  <TweetMedia type="img" src="https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg" />
+</Tweet>
