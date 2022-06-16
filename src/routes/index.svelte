@@ -27,7 +27,77 @@
     likes: 0,
   }}
 >
+  <TweetMedia
+    type="img"
+    src={['https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png', 'https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg']}
+  />
+</Tweet>
+
+<Tweet
+  owner={{ name: 'Erick Vargas', user: 'eriandev' }}
+  createdAt={1655391763172}
+  message="Un nuevo tweet"
+  reactions={{
+    comments: 0,
+    retweets: 0,
+    likes: 0,
+  }}
+>
+  <TweetMedia
+    type="img"
+    src={[
+      'https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png',
+      'https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png',
+      'https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg',
+    ]}
+  />
+</Tweet>
+
+<Tweet
+  owner={{ name: 'Erick Vargas', user: 'eriandev' }}
+  createdAt={1655391763172}
+  message="Un nuevo tweet"
+  reactions={{
+    comments: 0,
+    retweets: 0,
+    likes: 0,
+  }}
+>
+  <TweetMedia
+    type="img"
+    src={[
+      'https://pbs.twimg.com/media/FSrp2zIWAAEuYDn?format=jpg&name=small',
+      'https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png',
+      'https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png',
+      'https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg',
+    ]}
+  />
+</Tweet>
+
+<Tweet
+  owner={{ name: 'Erick Vargas', user: 'eriandev' }}
+  createdAt={1655391763172}
+  message="Un nuevo tweet"
+  reactions={{
+    comments: 0,
+    retweets: 0,
+    likes: 0,
+  }}
+>
   <TweetMedia type="img" src="https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png" />
+</Tweet>
+
+<Tweet
+  owner={{ name: 'Erick Vargas', user: 'eriandev' }}
+  createdAt={1655391763172}
+  message="Un nuevo tweet"
+  reactions={{
+    comments: 0,
+    retweets: 0,
+    likes: 0,
+  }}
+>
+  <TweetMedia type="img" src="https://media.giphy.com/media/3o85xwSzDvuE1b2tW0/giphy.gif" />
 </Tweet>
 
 <Tweet
