@@ -6,4 +6,9 @@
 </script>
 
 <TweetCard owner={{ name: 'Erick Vargas', user: 'eriandev' }} timestamp={1655391763172} {message} />
-<TweetCard owner={{ name: 'Erick Vargas', user: 'eriandev' }} timestamp={1655391763172} message="Un nuevo tweet" />
+<TweetCard
+  owner={{ name: 'Erick Vargas', user: 'eriandev' }}
+  timestamp={1655391763172}
+  message="Un nuevo tweet"
+  media={{ image: 'https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png' }}
+/>

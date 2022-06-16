@@ -3,12 +3,12 @@
     @apply grid cursor-pointer grid-cols-[48px_auto] gap-3 border-b border-solid border-gray-300 px-4 py-3 transition-[background-color] duration-200 ease-in-out;
     @apply hover:bg-white hover:bg-opacity-[0.03] hover:transition-[background-color] hover:duration-200 hover:ease-in-out;
 
-    img {
-      @apply h-12 w-12 rounded-full;
-    }
-
     header {
       @apply text-[15px];
+    }
+
+    .media {
+      @apply mt-3;
     }
 
     footer {

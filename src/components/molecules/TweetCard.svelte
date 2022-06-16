@@ -1,6 +1,7 @@
 <script>
   import Text from '@/components/atoms/Text.svelte'
   import Icon from '@/components/atoms/Icon.svelte'
+  import Image from '@/components/atoms/Image.svelte'
 
   /** @type {any} */
   export let owner
@@ -8,6 +9,8 @@
   export let timestamp
   /** @type {string} */
   export let message
+  /** @type {any} */
+  export let media = undefined
   /** @type {number} */
   export let comments = 0
   /** @type {number} */
@@ -16,19 +19,30 @@
   export let likes = 0
 
   const size = 18.75
+
+  $: profileImg = owner?.image ?? 'images/default_profile.png'
 </script>
 
 <article class="tweet">
-  <img src={owner?.image ?? 'images/default_profile.png'} alt={owner.name} />
+  <Image alt={owner.name} src={profileImg} class="h-12 w-12 rounded-full" />
+
   <div class="content">
     <header>
       <Text tag="span" class="font-bold">{owner.name}</Text>
       <Text opaque tag="span">@{owner.user}</Text>
       <Text opaque tag="span">· {timestamp}</Text>
     </header>
+
     <Text tag="p" class="text-[15px] leading-5">
       {message}
     </Text>
+
+    {#if media}
+      <div class="media">
+        <Image src={media.image} alt="Image post" class="max-h-[510px] max-w-[504px] rounded-[18px]" />
+      </div>
+    {/if}
+
     <footer>
       <div class="comments">
         <Icon name="comment" {size} />
