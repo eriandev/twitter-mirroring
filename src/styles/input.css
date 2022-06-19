@@ -1,0 +1,13 @@
+@layer components {
+  .input {
+    @apply h-[52px] w-full rounded-[4px] border border-solid border-gray-200 bg-transparent p-2 font-twitter;
+
+    &:focus {
+      @apply border-primary-100;
+    }
+
+    &::placeholder {
+      @apply text-gray-200;
+    }
+  }
+}

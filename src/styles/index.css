@@ -1,6 +1,7 @@
 @import 'tailwindcss/components';
 
 @import 'button.css';
+@import 'input.css';
 @import 'link.css';
 @import 'sidebar.css';
 @import 'text.css';

@@ -4,6 +4,10 @@
       @apply text-primary-100;
     }
 
+    &.opaque {
+      @apply text-gray-200;
+    }
+
     &.decorated {
       @apply hover:underline;
     }

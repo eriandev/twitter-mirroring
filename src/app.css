@@ -49,3 +49,11 @@
   font-family: 'TwitterChirp';
   src: local(''), url('./assets/fonts/chirp-heavy-web.woff') format('woff');
 }
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'TwitterChirpExtendedHeavy';
+  src: local(''), url('./assets/fonts/chirp-extended-heavy-web.woff') format('woff');
+}
