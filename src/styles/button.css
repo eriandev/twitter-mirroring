@@ -25,5 +25,9 @@
     &.danger {
       @apply border border-solid border-[rgb(244,33,46)] bg-[rgb(244,33,46,0.1)] text-sm text-[rgb(244,33,46)];
     }
+
+    &.primal {
+      @apply mt-2 h-[42px] w-full border border-solid border-gray-200 bg-transparent text-[15px] text-sm text-primary-100 hover:bg-primary-10;
+    }
   }
 }

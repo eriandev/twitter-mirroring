@@ -4,6 +4,8 @@
   /** @type {boolean} */
   export let opaque = false
   /** @type {boolean} */
+  export let gigamax = false
+  /** @type {boolean} */
   export let large = false
   /** @type {boolean} */
   export let small = false
@@ -13,6 +15,6 @@
   const text = true
 </script>
 
-<svelte:element this={tag} {...$$restProps} class:text class:opaque class:tiny class:small class:large>
+<svelte:element this={tag} {...$$restProps} class:text class:opaque class:tiny class:small class:large class:gigamax>
   <slot />
 </svelte:element>

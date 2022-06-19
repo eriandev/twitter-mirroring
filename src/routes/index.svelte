@@ -15,25 +15,16 @@
   </aside>
 
   <section class="mx-auto h-min w-full max-w-[600px] px-8 py-8 md:px-4 lg:max-w-[722px] lg:px-2 xl:self-center">
-    <header class="extended-font mb-9 text-gray-100">
+    <header class="mb-9 font-twitter-extended text-gray-100">
       <Icon name="logo" size={42} />
-      <Text
-        tag="span"
-        class="my-[40px] block text-[38px] font-bold leading-[52px] tracking-[-0.8px] sm:text-[61px] sm:leading-[84px] sm:tracking-[-1.2px]"
-      >
-        Lo que está pasando ahora
-      </Text>
+      <Text gigamax tag="span">Lo que está pasando ahora</Text>
       <Text tag="span" class="text-[22px] sm:text-3xl">Únete a Twitter hoy mismo.</Text>
     </header>
 
     <form class="mt-4 grid max-w-[300px] gap-4">
       <Input placeholder="Nombre" />
       <Input placeholder="Usuario" />
-      <Button
-        class="mt-2 h-[42px] w-full border border-solid border-gray-200 bg-transparent text-[15px] text-sm text-primary-100 hover:bg-primary-10"
-      >
-        Inicia sesión
-      </Button>
+      <Button primal>Inicia sesión</Button>
     </form>
   </section>
 </main>
@@ -41,11 +32,6 @@
 <aside class="grid w-full place-items-center bg-[url(images/lohp_1302w.png)] bg-cover bg-no-repeat text-white lg:hidden">
   <Icon name="logo" size={220} class="my-[30px]" />
 </aside>
-
-<!-- <picture>
-  <source srcset="images/lohp_1302w.png" media="(min-width: 768px)" />
-  <img src="images/lohp_850w.png" alt="MDN" />
-</picture> -->
 
 <footer class="flex flex-wrap items-center justify-center px-4 py-3">
   {#each twitterLinks as { title, to }}
@@ -57,10 +43,6 @@
 </footer>
 
 <style lang="postcss">
-  .extended-font {
-    font-family: 'TwitterChirpExtendedHeavy', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
   @media screen and (min-width: 1740px) {
     main {
       min-height: calc(100vh - 48px);

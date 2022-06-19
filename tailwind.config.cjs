@@ -10,6 +10,7 @@ module.exports = {
 
     fontFamily: {
       twitter: ['TwitterChirp', '-apple-system', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans', 'sans-serif'],
+      'twitter-extended': ['TwitterChirpExtendedHeavy', '-apple-system', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
     },
 
     colors: {

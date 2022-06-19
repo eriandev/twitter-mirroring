@@ -17,5 +17,9 @@
     &.large {
       @apply text-lg xl:text-xl;
     }
+
+    &.gigamax {
+      @apply my-[40px] block text-[38px] font-bold leading-[52px] tracking-[-0.8px] sm:text-[61px] sm:leading-[84px] sm:tracking-[-1.2px];
+    }
   }
 }
