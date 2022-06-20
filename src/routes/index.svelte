@@ -13,7 +13,7 @@
     <Icon name="logo" class="lg:my-[30px] lg:h-5/6 lg:max-h-[440px] lg:w-5/6 lg:max-w-[440px] lg:px-5" />
   </aside>
 
-  <section class="mx-auto h-min w-full max-w-[600px] px-8 py-8 md:px-4 lg:max-w-[722px] lg:px-2 xl:self-center">
+  <section class="mx-auto h-min w-full max-w-[600px] px-8 py-8 md:px-4 lg:mx-0 lg:self-center lg:px-9">
     <header class="mb-9 font-twitter-extended text-gray-100">
       <Icon name="logo" size={42} />
       <Text gigamax tag="span">Lo que está pasando ahora</Text>
