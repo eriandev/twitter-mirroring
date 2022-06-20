@@ -2,8 +2,7 @@
   import Icon from '@/components/atoms/Icon.svelte'
   import Text from '@/components/atoms/Text.svelte'
   import Link from '@/components/atoms/Link.svelte'
-  import Input from '@/components/atoms/Input.svelte'
-  import Button from '@/components/atoms/Button.svelte'
+  import LoginForm from '@/components/molecules/LoginForm.svelte'
   import twitterLinks from '@/assets/data/twitter_footer.json'
 </script>
 
@@ -21,11 +20,7 @@
       <Text tag="span" class="text-[22px] sm:text-3xl">Únete a Twitter hoy mismo.</Text>
     </header>
 
-    <form class="mt-4 grid max-w-[300px] gap-4">
-      <Input placeholder="Nombre" />
-      <Input placeholder="Usuario" />
-      <Button primal>Inicia sesión</Button>
-    </form>
+    <LoginForm />
   </section>
 </main>
 

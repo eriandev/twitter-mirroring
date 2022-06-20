@@ -9,5 +9,17 @@
     &::placeholder {
       @apply text-gray-200;
     }
+
+    &.invalid {
+      @apply border-liked-100;
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+
+    &:disabled {
+      @apply animate-none cursor-not-allowed border-gray-200 opacity-80;
+    }
   }
 }
