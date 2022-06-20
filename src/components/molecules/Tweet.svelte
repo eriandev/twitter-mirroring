@@ -1,4 +1,5 @@
 <script>
+  import { useTime } from '@/hooks'
   import Text from '@/components/atoms/Text.svelte'
   import Image from '@/components/atoms/Image.svelte'
   import TweetHeader from '@/components/molecules/TweetHeader.svelte'
@@ -31,6 +32,8 @@
   /** @type {Reactions} */
   export let reactions
 
+  const { getTimeAgo } = useTime()
+
   $: profileImg = owner?.image ?? 'images/default_profile.png'
 </script>
 
@@ -38,7 +41,7 @@
   <Image alt={owner.name} src={profileImg} class="h-12 w-12 rounded-full" />
 
   <div class="tweet-content">
-    <TweetHeader {createdAt} {...owner} />
+    <TweetHeader timeAgo={getTimeAgo(createdAt)} {...owner} />
 
     <Text tag="p" class="tweet-message">
       {message}
