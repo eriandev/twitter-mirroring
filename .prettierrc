@@ -2,5 +2,5 @@
   "semi": false,
   "printWidth": 140,
   "singleQuote": true,
-  "plugins": ["prettier-plugin-svelte"]
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"]
 }
