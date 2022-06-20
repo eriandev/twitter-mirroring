@@ -1,0 +1,97 @@
+[
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 1,
+      "likes": 1
+    },
+    "message": "Svelte",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": "images/avatars/svelte.png"
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 2,
+      "likes": 2
+    },
+    "message": "Svelte and Vue",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": ["images/avatars/svelte.png", "images/avatars/vue.png"]
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 3,
+      "likes": 3
+    },
+    "message": "Svelte, Vue and Angular",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": ["images/avatars/svelte.png", "images/avatars/vue.png", "images/avatars/angular.png"]
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 0,
+      "retweets": 4,
+      "likes": 4
+    },
+    "message": "Main frontend frameworks",
+    "with_media": true,
+    "media": {
+      "type": "img",
+      "src": [
+        "images/avatars/svelte.png",
+        "images/avatars/vue.png",
+        "images/avatars/angular.png",
+        "images/avatars/react.png"
+      ]
+    },
+    "created_at": 1655391763172
+  },
+  {
+    "owner": {
+      "name": "Erick Vargas",
+      "user": "eriandev"
+    },
+    "reactions": {
+      "comments": 24000,
+      "retweets": 8000,
+      "likes": 10000
+    },
+    "message": "Internet Explorer discontinued on June 15, 2022",
+    "with_media": true,
+    "media": {
+      "type": "gif",
+      "src": "https://media.giphy.com/media/3o85xwSzDvuE1b2tW0/giphy.gif"
+    },
+    "created_at": 1655391763172
+  }
+]

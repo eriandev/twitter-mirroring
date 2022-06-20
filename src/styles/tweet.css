@@ -15,7 +15,7 @@
       @apply rounded-[18px] border border-solid border-gray-300;
 
       &.collage {
-        @apply grid h-[288px] gap-[2px];
+        @apply grid h-[158px] gap-[2px] sm:h-[288px];
 
         img {
           @apply h-full w-full object-cover;
@@ -39,7 +39,7 @@
             'one three';
 
           & > :first-child {
-            @apply h-[288px] rounded-l-[18px];
+            @apply h-[158px] rounded-l-[18px] sm:h-[288px];
             grid-area: one;
           }
 
@@ -84,7 +84,7 @@
       @apply mt-3 grid max-w-[425px] grid-cols-[repeat(4,fit-content(100%))] justify-between;
 
       div {
-        @apply grid grid-cols-2 items-center gap-2 text-gray-200 transition-[background-color] duration-200 ease-in-out;
+        @apply grid grid-cols-[repeat(2,fit-content(100%))] items-center gap-2 text-gray-200 transition-[background-color] duration-200 ease-in-out;
         @apply hover:transition-[background-color] hover:duration-200 hover:ease-in-out;
 
         &.comments {
