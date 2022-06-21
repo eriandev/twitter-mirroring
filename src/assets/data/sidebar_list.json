@@ -1,42 +1,50 @@
 [
   {
-    "text": "Inicio",
+    "text": "Home",
     "name": "home",
-    "to": "/home"
+    "to": "/home",
+    "enabled": true
   },
   {
-    "text": "Explorar",
+    "text": "Explore",
     "name": "hashtag",
-    "to": "/"
+    "to": "/explore",
+    "enabled": false
   },
   {
-    "text": "Comunidad",
+    "text": "Communities",
     "name": "persons",
-    "to": "/"
+    "to": "/communities",
+    "enabled": false
   },
   {
-    "text": "Notificaciones",
+    "text": "Notifications",
     "name": "bell",
-    "to": "/"
+    "to": "/notifications",
+    "enabled": false
   },
   {
-    "text": "Mensajes",
+    "text": "Messages",
     "name": "mail",
-    "to": "/"
+    "to": "/messages",
+    "enabled": false
   },
   {
-    "text": "Guardados",
+    "text": "Bookmarks",
     "name": "bookmark",
-    "to": "/"
+    "to": "/bookmarks",
+    "enabled": false
   },
   {
-    "text": "Perfil",
+    "text": "Profile",
     "name": "person",
-    "to": "/"
+    "to": "/profile",
+    "enabled": true
   },
   {
-    "text": "Más opciones",
+    "text": "More",
     "name": "circle-options",
-    "to": "/"
+    "to": "/",
+    "enabled": false
   }
 ]

@@ -15,5 +15,9 @@
     &.tiny {
       @apply text-xs font-bold;
     }
+
+    &.disabled {
+      @apply cursor-not-allowed hover:bg-transparent;
+    }
   }
 }

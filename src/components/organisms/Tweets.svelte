@@ -6,7 +6,7 @@
   /** @type {import('@/hooks').TweetInfo[]} */
   export let tweets = []
 
-  const endClasses = 'block w-full py-4 text-center'
+  const endClasses = 'block w-full py-4 mb-14 text-center sm:mb-0'
 </script>
 
 {#if tweets.length}
@@ -17,7 +17,7 @@
       {/if}
     </Tweet>
   {/each}
-  <Text tag="span" class={endClasses}>Fin</Text>
+  <Text tag="span" class={endClasses}>End</Text>
 {:else}
-  <Text tag="span" class={endClasses}>No hay tweets</Text>
+  <Text tag="span" class={endClasses}>No tweets</Text>
 {/if}
