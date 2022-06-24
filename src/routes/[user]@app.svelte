@@ -1,9 +1,9 @@
 <script>
   import { userTweets } from '@/hooks'
-  import Tweets from '@/components/organisms/Tweets.svelte'
+  import Profile from '@/components/organisms/Profile.svelte'
 
   /** @returns {import('@/hooks').TweetInfo[]} */
   const { getTweets } = userTweets()
 </script>
 
-<Tweets tweets={getTweets()} />
+<Profile tweets={getTweets()} />

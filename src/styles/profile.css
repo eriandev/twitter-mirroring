@@ -1,0 +1,43 @@
+@layer components {
+  .profile-header {
+    .cover {
+      @apply relative -z-10 h-[120px] w-full bg-[rgb(51,54,57)];
+      @apply sm:h-[168px];
+      @apply md:h-[200px];
+
+      img {
+        @apply absolute top-[70%] left-4 h-[78px] w-[78px] rounded-full border border-solid border-black;
+        @apply sm:top-[65%] sm:h-[116px] sm:w-[116px];
+        @apply md:h-[134px] md:w-[134px];
+      }
+    }
+
+    section {
+      @apply mb-4 grid gap-2 p-4;
+
+      .action {
+        @apply flex items-center justify-end;
+      }
+
+      .user {
+        @apply sm:pt-2;
+      }
+
+      .description {
+        @apply mt-1 text-sm;
+      }
+
+      .info {
+        @apply flex flex-wrap text-gray-200;
+
+        div {
+          @apply mr-2 grid grid-cols-[repeat(2,fit-content(100%))] items-center gap-1 text-sm;
+        }
+      }
+
+      .stats {
+        @apply grid grid-cols-[repeat(2,fit-content(100%))] gap-5;
+      }
+    }
+  }
+}
