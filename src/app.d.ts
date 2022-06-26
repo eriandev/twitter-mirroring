@@ -5,6 +5,11 @@
 declare namespace App {
   // interface Locals {}
   // interface Platform {}
-  // interface Session {}
+  interface Session {
+    logged?: boolean;
+    name?: string;
+    user?: string;
+    image?: string;
+  }
   // interface Stuff {}
 }

@@ -25,24 +25,27 @@ export * from './useTweets.js'
 
 /**
  * @typedef UseAuth
- * @type {function(): { login: Login }}
+ * @type {function(): { canPass: CanPass; login: Login }}
+ */
+
+/**
+ * @typedef CanPass
+ * @type {(param: { pathname: string }) => boolean}
  */
 
 /**
  * @typedef Login
- * @type {function({ name: string, user: string }): Promise<LoginResponse>}
+ * @type {(param: { name: string, user: string }) => Promise<LoginResponse>}
  */
 
 /**
  * @typedef {{
+ *  name?: string
+ *  user?: string
+ *  image?: string
  *  error?: {
  *    param: 'name' | 'user'
  *    message: string
- *  },
- *  info?: {
- *    name: string
- *    user: string
- *    image: string
  *  }
  * }} LoginResponse
  */
