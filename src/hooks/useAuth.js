@@ -12,7 +12,7 @@ export function useAuth() {
   /** @param {{ pathname: string }} param */
   const canPass = ({ pathname }) => {
     if (browser) {
-      const { name, user, image } = JSON.parse(window.localStorage.getItem(USER_STORAGE) || '{}')
+      const { name, user } = JSON.parse(window.localStorage.getItem(USER_STORAGE) || '{}')
 
       if (pathname === '/') {
         if (logged) {
@@ -29,7 +29,7 @@ export function useAuth() {
 
         if (logged === undefined) {
           if (name && user) {
-            session.set({ name, user, image, logged: true })
+            session.set({ name, user, logged: true })
             goto('/home')
             return false
           }
@@ -47,7 +47,7 @@ export function useAuth() {
             return false
           }
 
-          session.set({ name, user, image, logged: true })
+          session.set({ name, user, logged: true })
           return true
         }
 
@@ -65,7 +65,7 @@ export function useAuth() {
     if (!name || typeof name !== 'string') return { error: { param: 'name', message: 'Empty or invalid field' } }
     if (!user || typeof user !== 'string') return { error: { param: 'user', message: 'Empty or invalid field' } }
 
-    const userInfo = { name, user, image: `https://unavatar.io/twitter/${user}` }
+    const userInfo = { user, name: name.toLocaleLowerCase() }
     window.localStorage.setItem(USER_STORAGE, JSON.stringify(userInfo))
 
     goto('/home')

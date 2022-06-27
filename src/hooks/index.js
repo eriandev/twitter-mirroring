@@ -21,7 +21,6 @@ export * from './useProfile.js'
  * @typedef {{
  *  name?: string
  *  user?: string
- *  image?: string
  *  error?: {
  *    param: 'name' | 'user'
  *    message: string

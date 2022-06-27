@@ -9,7 +9,6 @@ declare namespace App {
     logged?: boolean;
     name?: string;
     user?: string;
-    image?: string;
     link?: string;
     country?: string;
     birthday?: string;

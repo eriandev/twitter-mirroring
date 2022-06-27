@@ -1,8 +1,16 @@
 <script>
+  import { get } from 'svelte/store'
+  import { getStores } from '$app/stores'
   import Icon from '@/components/atoms/Icon.svelte'
   import Text from '@/components/atoms/Text.svelte'
   import Link from '@/components/atoms/Link.svelte'
   import sidebarList from '@/assets/data/sidebar_list.json'
+
+  let userPath = ''
+
+  const { session } = getStores()
+  const { user } = get(session)
+  userPath = `/${user}`
 </script>
 
 <nav class="sidebar">
@@ -13,7 +21,7 @@
   <ul>
     {#each sidebarList as { name, to, enabled, text }, i}
       {@const linkPath = enabled ? to : '/home'}
-      {@const validatedLinkPath = linkPath === '/profile' ? '/eriandev' : linkPath}
+      {@const validatedLinkPath = linkPath === '/profile' ? userPath : linkPath}
 
       <li class={i > 4 ? 'on-sm' : undefined}>
         <Link prefetch to={validatedLinkPath} title={text} class="hover:bg-gray-100 hover:bg-opacity-10" disabled={!enabled}>

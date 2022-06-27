@@ -28,7 +28,7 @@
 
 <header class="profile-header">
   <div class="cover">
-    <Image src="images/default_profile.png" alt="" />
+    <Image src="https://unavatar.io/twitter/{user}?fallback=images/default_profile.png" alt="Profile" class="bg-gray-400" />
   </div>
 
   {#if name}
@@ -66,7 +66,7 @@
         {#if birthday}
           <div>
             <Icon name="balloon" size={17.5} />
-            <span>{birthday}</span>
+            <span>Born {birthday}</span>
           </div>
         {/if}
 

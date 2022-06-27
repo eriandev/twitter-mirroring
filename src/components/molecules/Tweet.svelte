@@ -33,12 +33,14 @@
   export let reactions
 
   const { getTimeAgo } = useTime()
-
-  $: profileImg = owner?.image ?? 'images/default_profile.png'
 </script>
 
 <article class="tweet">
-  <Image alt={owner.name} src={profileImg} class="h-12 w-12 rounded-full" />
+  <Image
+    src="https://unavatar.io/twitter/{owner.user}?fallback=images/default_profile.png"
+    alt={owner.name}
+    class="h-12 w-12 rounded-full"
+  />
 
   <div class="tweet-content">
     <TweetHeader timeAgo={getTimeAgo(createdAt)} {...owner} />
