@@ -38,7 +38,7 @@
       </article>
 
       <article class="user">
-        <Title tag="h1">{name}</Title>
+        <Title heavy tag="h1">{name}</Title>
         <Text opaque tag="span" class="block text-sm leading-none">@{user}</Text>
       </article>
 

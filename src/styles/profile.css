@@ -13,14 +13,14 @@
     }
 
     section {
-      @apply mb-4 grid gap-2 p-4;
+      @apply mb-4 grid gap-2 px-4 pt-3;
 
       .action {
-        @apply flex items-center justify-end;
+        @apply flex h-9 items-center justify-end;
       }
 
       .user {
-        @apply sm:pt-2;
+        @apply sm:pt-2 md:pt-6;
       }
 
       .description {
@@ -42,6 +42,6 @@
   }
 
   .no-exists {
-    @apply py-10 my-8 px-5 mx-auto grid gap-2 max-w-[400px];
+    @apply my-8 mx-auto grid max-w-[400px] gap-2 py-10 px-5;
   }
 }
