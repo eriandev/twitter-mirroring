@@ -1,9 +1,18 @@
 <script>
-  import { userTweets } from '@/hooks'
+  import { page } from '$app/stores'
+  import { useProfile } from '@/hooks'
   import Profile from '@/components/organisms/Profile.svelte'
 
-  /** @returns {import('@/hooks').TweetInfo[]} */
-  const { getTweets } = userTweets()
+  /** @type {import('@/hooks').ProfileInfo} */
+  let info
+  /** @type {import('@/hooks').TweetInfo[]} */
+  let tweets
+
+  const { user } = $page.params
+  const { getInfo, getTweets } = useProfile(user)
+
+  info = getInfo()
+  tweets = getTweets()
 </script>
 
-<Profile tweets={getTweets()} />
+<Profile {info} {tweets} />

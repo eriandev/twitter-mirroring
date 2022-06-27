@@ -6,34 +6,16 @@
     },
     "reactions": {
       "comments": 0,
-      "retweets": 0,
-      "likes": 0
+      "retweets": 1,
+      "likes": 1
     },
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolorum! Dolorum suscipit eos iusto excepturi ipsam, amet odit ut velit. Reiciendis, numquam nisi! Omnis inventore repellat hic ut minus quisquam?",
-    "with_media": false,
-    "media": {
-      "type": "img",
-      "src": ""
-    },
-    "created_at": 1655391763172
-  },
-  {
-    "owner": {
-      "name": "Erick Vargas",
-      "user": "eriandev"
-    },
-    "reactions": {
-      "comments": 0,
-      "retweets": 0,
-      "likes": 0
-    },
-    "message": "Un nuevo tweet!",
+    "message": "Svelte",
     "with_media": true,
     "media": {
       "type": "img",
-      "src": ["https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png"]
+      "src": "images/avatars/svelte.png"
     },
-    "created_at": 1655391763172
+    "created_at": 1655764876580
   },
   {
     "owner": {
@@ -42,19 +24,16 @@
     },
     "reactions": {
       "comments": 0,
-      "retweets": 0,
-      "likes": 0
+      "retweets": 2,
+      "likes": 2
     },
-    "message": "Un nuevo tweet!",
+    "message": "Svelte and Vue",
     "with_media": true,
     "media": {
       "type": "img",
-      "src": [
-        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
-        "https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg"
-      ]
+      "src": ["images/avatars/svelte.png", "images/avatars/vue.png"]
     },
-    "created_at": 1655391763172
+    "created_at": 1655764876580
   },
   {
     "owner": {
@@ -63,20 +42,16 @@
     },
     "reactions": {
       "comments": 0,
-      "retweets": 0,
-      "likes": 0
+      "retweets": 3,
+      "likes": 3
     },
-    "message": "Un nuevo tweet!",
+    "message": "Svelte, Vue and Angular",
     "with_media": true,
     "media": {
       "type": "img",
-      "src": [
-        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
-        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
-        "https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg"
-      ]
+      "src": ["images/avatars/svelte.png", "images/avatars/vue.png", "images/avatars/angular.png"]
     },
-    "created_at": 1655391763172
+    "created_at": 1655764876580
   },
   {
     "owner": {
@@ -85,21 +60,21 @@
     },
     "reactions": {
       "comments": 0,
-      "retweets": 0,
-      "likes": 0
+      "retweets": 4,
+      "likes": 4
     },
-    "message": "Un nuevo tweet!",
+    "message": "Main frontend frameworks",
     "with_media": true,
     "media": {
       "type": "img",
       "src": [
-        "https://pbs.twimg.com/media/FSrp2zIWAAEuYDn?format=jpg&name=small",
-        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
-        "https://pbs.twimg.com/media/FVTiTfPWIAACR7v?format=png",
-        "https://pbs.twimg.com/media/FPnoBtjWYAAnHYb?format=jpg"
+        "images/avatars/svelte.png",
+        "images/avatars/vue.png",
+        "images/avatars/angular.png",
+        "images/avatars/react.png"
       ]
     },
-    "created_at": 1655391763172
+    "created_at": 1655764876580
   },
   {
     "owner": {
@@ -107,16 +82,16 @@
       "user": "eriandev"
     },
     "reactions": {
-      "comments": 0,
-      "retweets": 0,
-      "likes": 0
+      "comments": 24000,
+      "retweets": 8000,
+      "likes": 10000
     },
-    "message": "Un nuevo tweet!",
+    "message": "Internet Explorer discontinued on June 15, 2022",
     "with_media": true,
     "media": {
       "type": "gif",
       "src": "https://media.giphy.com/media/3o85xwSzDvuE1b2tW0/giphy.gif"
     },
-    "created_at": 1655391763172
+    "created_at": 1655305363172
   }
 ]

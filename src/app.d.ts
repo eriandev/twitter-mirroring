@@ -10,6 +10,13 @@ declare namespace App {
     name?: string;
     user?: string;
     image?: string;
+    link?: string;
+    country?: string;
+    birthday?: string;
+    createdAt?: number;
+    following?: number;
+    followers?: number;
+    description?: string;
   }
   // interface Stuff {}
 }

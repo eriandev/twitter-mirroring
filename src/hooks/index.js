@@ -1,27 +1,6 @@
 export * from './useAuth.js'
 export * from './useTime.js'
-export * from './useTweets.js'
-
-/**
- * @typedef {object} TweetInfo
- *
- * @prop {object} owner
- * @prop {string} owner.user
- * @prop {string} owner.name
- *
- * @prop {object} reactions
- * @prop {number} reactions.comments
- * @prop {number} reactions.retweets
- * @prop {number} reactions.likes
- *
- * @prop {string} message
- * @prop {number} created_at
- * @prop {boolean} with_media
- *
- * @prop {object} media
- * @prop {string | string[]} media.src
- * @prop {'img' | 'gif' | 'video'} media.type
- */
+export * from './useProfile.js'
 
 /**
  * @typedef UseAuth
@@ -48,4 +27,50 @@ export * from './useTweets.js'
  *    message: string
  *  }
  * }} LoginResponse
+ */
+
+/**
+ * @typedef GetInfo
+ * @type {() => ProfileInfo}
+ */
+
+/**
+ * @typedef GetTweets
+ * @type {() => TweetInfo[]}
+ */
+
+/**
+ * @typedef {object} ProfileInfo
+ *
+ * @prop {string=} user
+ * @prop {string=} name
+ * @prop {string=} link
+ * @prop {string=} country
+ * @prop {string=} birthday
+ * @prop {number=} createdAt
+ * @prop {number=} following
+ * @prop {number=} followers
+ * @prop {string=} description
+ */
+
+/**
+ * @typedef {object} TweetInfo
+ *
+ * @prop {object} owner
+ * @prop {string} owner.user
+ * @prop {string} owner.name
+ *
+ * @prop {object} reactions
+ * @prop {number} reactions.comments
+ * @prop {number} reactions.retweets
+ * @prop {number} reactions.likes
+ *
+ * @prop {string} message
+ * @prop {number} created_at
+ * @prop {boolean} with_media
+ *
+ * @prop {object} media
+ * @prop {string | string[]} media.src
+ * @prop {string} media.type
+ * Avaible values: 'img' | 'gif' | 'video'
  */
