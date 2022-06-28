@@ -8,7 +8,7 @@
 
 <main class="w-full lg:grid lg:min-h-[calc(100vh-72px)] lg:grid-cols-[minmax(0,1038px)_770px]">
   <aside
-    class="hidden lg:grid lg:w-full lg:place-items-center lg:bg-[url(images/lohp_1302w.png)] lg:bg-cover lg:bg-top lg:bg-no-repeat lg:text-white"
+    class="hidden lg:grid lg:w-full lg:place-items-center lg:bg-[url(/images/lohp_1302w.png)] lg:bg-cover lg:bg-top lg:bg-no-repeat lg:text-white"
   >
     <Icon name="logo" class="lg:my-[30px] lg:h-5/6 lg:max-h-[440px] lg:w-5/6 lg:max-w-[440px] lg:px-5" />
   </aside>
@@ -24,7 +24,7 @@
   </section>
 </main>
 
-<aside class="grid w-full place-items-center bg-[url(images/lohp_1302w.png)] bg-cover bg-no-repeat text-white lg:hidden">
+<aside class="grid w-full place-items-center bg-[url(/images/lohp_1302w.png)] bg-cover bg-no-repeat text-white lg:hidden">
   <Icon name="logo" size={220} class="my-[30px]" />
 </aside>
 

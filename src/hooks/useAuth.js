@@ -65,7 +65,7 @@ export function useAuth() {
     if (!name || typeof name !== 'string') return { error: { param: 'name', message: 'Empty or invalid field' } }
     if (!user || typeof user !== 'string') return { error: { param: 'user', message: 'Empty or invalid field' } }
 
-    const userInfo = { user, name: name.toLocaleLowerCase() }
+    const userInfo = { name, user: user.toLocaleLowerCase() }
     window.localStorage.setItem(USER_STORAGE, JSON.stringify(userInfo))
 
     goto('/home')
