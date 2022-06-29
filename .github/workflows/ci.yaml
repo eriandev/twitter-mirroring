@@ -1,0 +1,50 @@
+name: Continuous deployment
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install dependencies 🧱
+        run: npm ci
+
+      - name: Lint 👕
+        run: npm run lint
+
+  deploy:
+    needs: [lint]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup Node 📝
+        uses: actions/setup-node@v2
+        with:
+          cache: 'npm'
+          node-version: '16'
+
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
+          BRANCH: gh-pages
+          FOLDER: build
