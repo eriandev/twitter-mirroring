@@ -7,21 +7,15 @@
   import '@/app.css'
 
   let loading = true
-  let actualRoute = '/'
 
   const { canPass } = useAuth()
 
   beforeNavigate(() => (loading = true))
-  afterNavigate(({ to }) => {
-    actualRoute = to.pathname
-    loading = !canPass({ pathname: to.pathname })
-  })
+  afterNavigate(({ to }) => loading = !canPass({ pathname: to.pathname }))
 </script>
 
 {#if loading}
   <GuardScreen />
-{:else if actualRoute === '/'}
-  <slot />
 {:else}
   <div class="sm:grid sm:grid-cols-sm-layout md:grid-cols-md-layout lg:grid-cols-sm-layout lg:justify-center xl:grid-cols-xl-layout">
     <Sidebar />

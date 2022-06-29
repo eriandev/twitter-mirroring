@@ -2,12 +2,16 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import adapter from '@sveltejs/adapter-static'
 
+const dev = process.env.NODE_ENV === 'development'
 const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url))
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
     adapter: adapter(),
+    paths: {
+      base: dev ? '/' : '/twitter-mirroring',
+    },
     prerender: {
       default: true,
     },
