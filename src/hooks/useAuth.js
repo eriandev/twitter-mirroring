@@ -14,7 +14,7 @@ export function useAuth() {
     if (browser) {
       const { name, user } = JSON.parse(window.localStorage.getItem(USER_STORAGE) || '{}')
 
-      if (pathname === '/') {
+      if (pathname === '/twitter-mirroring') {
         if (logged) {
           if (!name || !user) {
             window.localStorage.removeItem(USER_STORAGE)
