@@ -1,4 +1,5 @@
 <script>
+  import { getUserAvatar } from '@/shared/functions'
   import Link from '@/components/atoms/Link.svelte'
   import Icon from '@/components/atoms/Icon.svelte'
   import Text from '@/components/atoms/Text.svelte'
@@ -28,7 +29,7 @@
 
 <header class="profile-header">
   <div class="cover">
-    <Image src="https://unavatar.io/twitter/{user}?fallback=images/default_profile.png" alt="Profile" class="bg-gray-400" />
+    <Image alt="Profile" src={getUserAvatar(user)} class="bg-gray-400" />
   </div>
 
   {#if name}

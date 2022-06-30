@@ -1,5 +1,6 @@
 <script>
   import { useTime } from '@/hooks'
+  import { getUserAvatar } from '@/shared/functions'
   import Text from '@/components/atoms/Text.svelte'
   import Image from '@/components/atoms/Image.svelte'
   import TweetHeader from '@/components/molecules/TweetHeader.svelte'
@@ -36,11 +37,7 @@
 </script>
 
 <article class="tweet">
-  <Image
-    src="https://unavatar.io/twitter/{owner.user}?fallback=images/default_profile.png"
-    alt={owner.name}
-    class="h-12 w-12 rounded-full"
-  />
+  <Image alt={owner.name} src={getUserAvatar(owner.user)} class="h-12 w-12 rounded-full" />
 
   <div class="tweet-content">
     <TweetHeader timeAgo={getTimeAgo(createdAt)} {...owner} />
