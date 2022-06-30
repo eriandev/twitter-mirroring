@@ -1,1 +1,0 @@
-import{c as a}from"./singletons-d1fb5791.js";a.disable_scroll_handling;const t=a.goto;a.invalidate;a.prefetch;a.prefetch_routes;const o=a.before_navigate,s=a.after_navigate,n="twt-user",r={day:86400,hour:3600,minute:60,second:1},c=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];export{r as D,c as M,n as U,s as a,o as b,t as g};
