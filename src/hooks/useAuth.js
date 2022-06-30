@@ -1,8 +1,8 @@
 import { get } from 'svelte/store'
 import { browser } from '$app/env'
-import { goto } from '$app/navigation'
 import { getStores } from '$app/stores'
-import { USER_STORAGE } from '@/shared/constants'
+import { navigateTo } from '@/shared/functions'
+import { BASE_PATH, USER_STORAGE } from '@/shared/constants'
 
 /** @type {import('@/hooks').UseAuth} */
 export function useAuth() {
@@ -19,18 +19,18 @@ export function useAuth() {
           if (!name || !user) {
             window.localStorage.removeItem(USER_STORAGE)
             session.set({ logged: false })
-            goto('/')
+            navigateTo('/')
             return false
           }
 
-          goto('/home')
+          navigateTo('home')
           return false
         }
 
         if (logged === undefined) {
           if (name && user) {
             session.set({ name, user, logged: true })
-            goto('/home')
+            navigateTo('home')
             return false
           }
 
@@ -40,10 +40,10 @@ export function useAuth() {
         return true
       }
 
-      if (pathname === '/home') {
+      if (pathname === `${BASE_PATH}home`) {
         if (logged === undefined) {
           if (!name || !user) {
-            goto('/')
+            navigateTo('/')
             return false
           }
 
@@ -68,7 +68,7 @@ export function useAuth() {
     const userInfo = { name, user: user.toLocaleLowerCase() }
     window.localStorage.setItem(USER_STORAGE, JSON.stringify(userInfo))
 
-    goto('/home')
+    navigateTo('home')
     return userInfo
   }
 

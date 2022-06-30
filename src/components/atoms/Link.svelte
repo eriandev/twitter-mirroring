@@ -14,13 +14,11 @@
   /** @type {boolean} */
   export let disabled = false
   /** @type {string} */
-  export { href as to }
-
-  /** @type {string} */
-  let href
+  export let to
 
   const link = true
   const target = external ? '_blank' : undefined
+  const href = external ? to : `/twitter-mirroring/${to}`
   const rel = external ? 'external noopener noreferrer' : undefined
 </script>
 

@@ -9,7 +9,7 @@
   const { canPass } = useAuth()
 
   beforeNavigate(() => (loading = true))
-  afterNavigate(({ to }) => loading = !canPass({ pathname: to.pathname }))
+  afterNavigate(({ to }) => (loading = !canPass({ pathname: to.pathname })))
 </script>
 
 {#if loading}

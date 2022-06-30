@@ -2,49 +2,49 @@
   {
     "text": "Home",
     "name": "home",
-    "to": "/home",
+    "to": "home",
     "enabled": true
   },
   {
     "text": "Explore",
     "name": "hashtag",
-    "to": "/explore",
+    "to": "explore",
     "enabled": false
   },
   {
     "text": "Communities",
     "name": "persons",
-    "to": "/communities",
+    "to": "communities",
     "enabled": false
   },
   {
     "text": "Notifications",
     "name": "bell",
-    "to": "/notifications",
+    "to": "notifications",
     "enabled": false
   },
   {
     "text": "Messages",
     "name": "mail",
-    "to": "/messages",
+    "to": "messages",
     "enabled": false
   },
   {
     "text": "Bookmarks",
     "name": "bookmark",
-    "to": "/bookmarks",
+    "to": "bookmarks",
     "enabled": false
   },
   {
     "text": "Profile",
     "name": "person",
-    "to": "/profile",
+    "to": "profile",
     "enabled": true
   },
   {
     "text": "More",
     "name": "circle-options",
-    "to": "/",
+    "to": "",
     "enabled": false
   }
 ]
