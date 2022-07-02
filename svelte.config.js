@@ -8,9 +8,6 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 const config = {
   kit: {
     adapter: adapter(),
-    paths: {
-      base: '/twitter-mirroring',
-    },
     prerender: {
       default: true,
     },
