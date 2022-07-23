@@ -30,6 +30,7 @@ speed-measure-plugin*.json
 # Svelte-kit
 /build
 /package
+/.vercel
 /.svelte-kit
 
 # testing

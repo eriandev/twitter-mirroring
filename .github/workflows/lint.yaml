@@ -1,0 +1,23 @@
+name: Linter
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install dependencies 🧱
+        run: npm ci
+
+      - name: Lint 👕
+        run: npm run lint
