@@ -12,8 +12,8 @@
 
 You will need:
 
-- [Nodejs 16+](https://nodejs.org/)
 - [Git](https://git-scm.com/)
+- [Nodejs 16+](https://nodejs.org/)
 
 1. Clone the repository:
 
@@ -33,4 +33,4 @@ npm install
 npm run dev
 ```
 
-4. 🥳 Ready! Open the browser and write <http://localhost:3000>
+4. 🥳 Ready! Open the browser and write <http://127.0.0.1:5173/>
