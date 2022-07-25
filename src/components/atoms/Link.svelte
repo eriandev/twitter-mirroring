@@ -16,9 +16,9 @@
   /** @type {string} */
   export let to
 
+  let href = to
   const link = true
   const target = external ? '_blank' : undefined
-  const href = external ? to : `/twitter-mirroring/${to}`
   const rel = external ? 'external noopener noreferrer' : undefined
 </script>
 

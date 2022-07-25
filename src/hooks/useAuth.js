@@ -2,7 +2,7 @@ import { get } from 'svelte/store'
 import { browser } from '$app/env'
 import { getStores } from '$app/stores'
 import { navigateTo } from '@/shared/functions'
-import { BASE_PATH, USER_STORAGE } from '@/shared/constants'
+import { USER_STORAGE } from '@/shared/constants'
 
 /** @type {import('@/hooks').UseAuth} */
 export function useAuth() {
@@ -14,7 +14,7 @@ export function useAuth() {
     if (browser) {
       const { name, user } = JSON.parse(window.localStorage.getItem(USER_STORAGE) || '{}')
 
-      if (pathname === '/twitter-mirroring') {
+      if (pathname === '/') {
         if (logged) {
           if (!name || !user) {
             window.localStorage.removeItem(USER_STORAGE)
@@ -40,7 +40,7 @@ export function useAuth() {
         return true
       }
 
-      if (pathname === `${BASE_PATH}home`) {
+      if (pathname === `/home`) {
         if (logged === undefined) {
           if (!name || !user) {
             navigateTo('/')
